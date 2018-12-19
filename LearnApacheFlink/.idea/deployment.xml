@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="46.101.148.178">
+    <serverData>
+      <paths name="46.101.148.178">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/root/FlinkUpdated" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
