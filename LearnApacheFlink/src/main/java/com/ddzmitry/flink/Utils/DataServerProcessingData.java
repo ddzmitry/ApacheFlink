@@ -1,4 +1,4 @@
-package com.ddzmitry.flink.OwnPractice;
+package com.ddzmitry.flink.Utils;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.ServerSocket;
 
-public class DataServer
+public class DataServerProcessingData
 {
     public static void main(String[] args) throws IOException
     {

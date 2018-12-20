@@ -144,7 +144,7 @@ under the License.
 							</filters>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>com.ddzmitry.flink.IterateDemo</mainClass>
+									<mainClass>com.ddzmitry.flink.IloveYou</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
