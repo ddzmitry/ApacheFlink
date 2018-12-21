@@ -46,6 +46,8 @@ public class SessionWindowingWithEventTime
 					}
 				})
 				.windowAll(EventTimeSessionWindows.withGap(Time.seconds(1)))
+
+//				Merging function will merge session of 10 records that came in in one second
 				.reduce(new ReduceFunction<Tuple2<Long, String>>()
 						{
 					public Tuple2<Long, String> reduce(Tuple2<Long, String> t1, Tuple2<Long, String> t2)

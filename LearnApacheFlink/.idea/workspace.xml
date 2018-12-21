@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45e3e4fb-23cf-4346-a1bc-e42260fa7c4b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/IloveYou.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerSessionEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerSessionProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/EventTimeDataServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithEventTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithProcessingTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SlidingWindowingWithEventTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SlidingWindowingWithProcessingTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/TumblingWindowingWithEventTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/GlobalWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FlinkTestou/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../FlinkTestou/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../FlinkTestou/src/main/java/com/ddzmitry/testflink/WordCount.class" beforeDir="false" />
@@ -18,14 +10,8 @@
       <change beforePath="$PROJECT_DIR$/../FlinkTestout/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../IntroToapacheFlink/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntroToapacheFlink/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/OwnPractice/DataServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerProcessingData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/tumbling processing code" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/AvarageProfitWindowing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/TumblingWindowingWithProcessingTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ddzmitry/flink/OwnPractice/DataServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ddzmitry/flink/windowing/AvarageProfitWindowing$Reduce1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ddzmitry/flink/windowing/AvarageProfitWindowing$Splitter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ddzmitry/flink/windowing/AvarageProfitWindowing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithEventTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithEventTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithProcessingTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithProcessingTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flink" beforeDir="false" afterPath="$PROJECT_DIR$/../flink" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../readme.md" afterDir="false" />
     </list>
@@ -48,7 +34,7 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/IterateDemo.java">
                 <provider selected="true" editor-type-id="text-editor">
@@ -56,10 +42,6 @@
                     <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="100" />
                     <folding>
                       <element signature="imports" expanded="true" />
-                      <element signature="e#676#878#0" expanded="true" />
-                      <element signature="e#877#878#0" expanded="true" />
-                      <element signature="e#1676#1954#0" expanded="true" />
-                      <element signature="e#1953#1954#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -68,14 +50,10 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/SplitDemo.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="209">
+                  <state relative-caret-position="280">
                     <caret line="24" column="57" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="41" />
                     <folding>
                       <element signature="imports" expanded="true" />
-                      <element signature="e#1190#1356#0" expanded="true" />
-                      <element signature="e#1355#1356#0" expanded="true" />
-                      <element signature="e#1382#1946#0" expanded="true" />
-                      <element signature="e#1945#1946#0" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -84,7 +62,7 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Aggregation.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="260">
+                  <state relative-caret-position="200">
                     <caret line="13" column="32" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="32" />
                     <folding>
                       <element signature="imports" expanded="true" />
@@ -103,15 +81,16 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.67" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="1" value="22" />
-          <entry key="2" value="17" />
-          <entry key="3" value="17" />
-          <entry key="4" value="18" />
+          <entry key="1" value="23" />
+          <entry key="2" value="18" />
+          <entry key="3" value="18" />
+          <entry key="4" value="19" />
           <entry key="SessionWindowingWithEventTime" value="1" />
           <entry key="SlidingWindowingWithProcessingTime" value="1" />
           <entry key="aggregation" value="1" />
@@ -120,9 +99,9 @@
           <entry key="class" value="1" />
           <entry key="data server" value="2" />
           <entry key="data server for session processing" value="1" />
-          <entry key="java" value="28" />
+          <entry key="java" value="30" />
           <entry key="js" value="1" />
-          <entry key="md" value="2" />
+          <entry key="md" value="3" />
           <entry key="oddeven" value="1" />
           <entry key="reduce" value="1" />
           <entry key="session processing code" value="1" />
@@ -136,10 +115,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="30" />
           <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="91" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="95" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -148,9 +127,9 @@
           <entry key="data server" value="1" />
           <entry key="data server for session processing" value="17" />
           <entry key="dummy" value="57" />
-          <entry key="java" value="2608" />
+          <entry key="java" value="2795" />
           <entry key="js" value="92" />
-          <entry key="md" value="1231" />
+          <entry key="md" value="1304" />
           <entry key="reduce" value="1" />
           <entry key="tumbling event code" value="1" />
           <entry key="tumbling processing code" value="1" />
@@ -159,9 +138,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2608" />
+          <entry key="JAVA" value="2795" />
           <entry key="JavaScript" value="92" />
-          <entry key="Markdown" value="1231" />
+          <entry key="Markdown" value="1304" />
           <entry key="PLAIN_TEXT" value="78" />
           <entry key="XML" value="4" />
         </counts>
@@ -169,42 +148,42 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerSessionProcessing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="600">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/EventTimeDataServer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithProcessingTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="546">
+                <caret line="106" selection-start-line="106" selection-end-line="106" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithProcessingTime.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/GlobalWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/TumblingWindowingWithEventTime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="119" />
+              <caret line="32" column="75" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,40 +192,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/TumblingWindowingWithProcessingTime.java">
+        <entry file="file://$PROJECT_DIR$/src/dataout/GlobalWindow/1">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="30" column="122" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="122" />
-            </state>
+            <state relative-caret-position="-185" />
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataout/GlobalWindow/2">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataout/GlobalWindow/3">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataout/GlobalWindow/4">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithEventTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="39" column="85" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="85" />
-              <folding>
-                <element signature="e#1864#1865#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="146" column="74" selection-start-line="146" selection-start-column="74" selection-end-line="146" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/IloveYou.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="308">
+              <caret line="49" column="92" selection-start-line="49" selection-start-column="92" selection-end-line="49" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -254,20 +225,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerProcessingData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="248">
               <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerSessionEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -277,8 +239,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -306,7 +268,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/IterationOwn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/OwnPractice/IterationOwn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/OwnPractice/CabActivity.java" />
-        <option value="$PROJECT_DIR$/../readme.md" />
         <option value="$PROJECT_DIR$/src/datasets/data server" />
         <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/tumbling processing code" />
         <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/OwnPractice/DataServer.java" />
@@ -330,6 +291,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/testingjs.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/IloveYou.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithProcessingTime.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithEventTime.java" />
+        <option value="$PROJECT_DIR$/../readme.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/GlobalWindow.java" />
       </list>
     </option>
   </component>
@@ -347,8 +311,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-178" />
-    <option name="y" value="410" />
+    <option name="x" value="212" />
+    <option name="y" value="103" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -360,6 +324,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -371,6 +337,12 @@
               <item name="LearnApacheFlink" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearnApacheFlink" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LearnApacheFlink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearnApacheFlink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LearnApacheFlink" type="b2602c69:ProjectViewProjectNode" />
@@ -412,22 +384,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545278226008" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545422117449" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ddzmi\Desktop\Tutoring Trilogy\ApacheFlink\LearnApacheFlink\src\dataout" />
       <recent name="C:\Users\ddzmi\Desktop\Tutoring Trilogy\ApacheFlink\LearnApacheFlink\src\main\java\com\ddzmitry\flink\windowing" />
       <recent name="C:\Users\ddzmi\Desktop\Tutoring Trilogy\ApacheFlink\LearnApacheFlink\src\main\java\com\ddzmitry\flink\OwnPractice" />
       <recent name="C:\Users\ddzmi\Desktop\Tutoring Trilogy\ApacheFlink\LearnApacheFlink\src\datasets" />
@@ -446,7 +418,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.IloveYou">
+  <component name="RunManager" selected="Application.GlobalWindow">
     <configuration name="DataServerProcessingData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ddzmitry.flink.Utils.DataServerProcessingData" />
       <module name="LearnApacheFlink" />
@@ -460,12 +432,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EventTimeDataServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ddzmitry.flink.Utils.EventTimeDataServer" />
+    <configuration name="GlobalWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ddzmitry.flink.windowing.GlobalWindow" />
       <module name="LearnApacheFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ddzmitry.flink.Utils.*" />
+          <option name="PATTERN" value="com.ddzmitry.flink.windowing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -514,18 +486,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.DataServerProcessingData" />
-      <item itemvalue="Application.EventTimeDataServer" />
       <item itemvalue="Application.SlidingWindowingWithProcessingTime" />
       <item itemvalue="Application.SlidingWindowingWithEventTime" />
       <item itemvalue="Application.IloveYou" />
+      <item itemvalue="Application.GlobalWindow" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GlobalWindow" />
+        <item itemvalue="Application.DataServerProcessingData" />
         <item itemvalue="Application.IloveYou" />
         <item itemvalue="Application.SlidingWindowingWithProcessingTime" />
-        <item itemvalue="Application.DataServerProcessingData" />
         <item itemvalue="Application.SlidingWindowingWithEventTime" />
-        <item itemvalue="Application.EventTimeDataServer" />
       </list>
     </recent_temporary>
   </component>
@@ -539,32 +511,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545176453352</updated>
-      <workItem from="1545176456928" duration="28972000" />
+      <workItem from="1545176456928" duration="30478000" />
+      <workItem from="1545420316110" duration="1630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28972000" />
+    <option name="totallyTimeSpent" value="32108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23507462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14978679" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" weight="0.123644255" />
-      <window_info anchor="bottom" id="CheckStyle" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.329718" />
-      <window_info anchor="bottom" id="File Transfer" weight="0.329718" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28416485" />
@@ -572,16 +538,23 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.123644255" />
+      <window_info anchor="bottom" id="CheckStyle" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="File Transfer" order="11" weight="0.22342733" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,47 +564,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dataout/maxPassangers/2">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataout/maxPassangers/1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataout/tripPopularity/1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataout/myxByPassangerPopularity/4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3540" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataout/myxByPassangerPopularity/3">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataout/myxByPassangerPopularity/2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Aggregation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataout/AvarageTrips/4">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataout/AvarageTrips/4" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/OwnPractice/CabActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -693,42 +626,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/datasets/data server">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/tumbling processing code">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datasets/data server" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/tumbling processing code" />
     <entry file="file://$PROJECT_DIR$/src/datasets/avg">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="338">
-            <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/tumbling event code">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/tumbling event code" />
     <entry file="file://$PROJECT_DIR$/src/dataout/www/1">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -792,16 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerSessionProcessing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/testingjs.js" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/EventTimeDataServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="80">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -809,58 +709,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerProcessingData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/TumblingWindowingWithEventTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        <state relative-caret-position="1000">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="119" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithEventTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="39" column="85" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="85" />
-          <folding>
-            <element signature="e#1864#1865#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/IterateDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#676#878#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#1676#1954#0" expanded="true" />
-            <element signature="e#1953#1954#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="146" column="74" selection-start-line="146" selection-start-column="74" selection-end-line="146" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/testingjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/IloveYou.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -871,27 +726,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerSessionEvent.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="54" />
+        <state relative-caret-position="2920">
+          <caret line="146" column="74" selection-start-line="146" selection-start-column="74" selection-end-line="146" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/TumblingWindowingWithEventTime.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/IloveYou.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="119" />
+        <state relative-caret-position="160">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/IterateDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/SplitDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="24" column="57" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Aggregation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerSessionEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerSessionProcessing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithProcessingTime.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="546">
+            <caret line="106" selection-start-line="106" selection-end-line="106" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/Utils/DataServerProcessingData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataout/GlobalWindow/2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataout/GlobalWindow/3">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataout/GlobalWindow/4">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataout/GlobalWindow/1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/SessionWindowingWithEventTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="49" column="92" selection-start-line="49" selection-start-column="92" selection-end-line="49" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ddzmitry/flink/windowing/GlobalWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+          <caret line="32" column="75" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -22,7 +22,7 @@ public class SessionWindowingWithProcessingTime
 		
 		DataStream<String> data = env.socketTextStream("localhost", 9090);
 		
-		                // month, product, category, profit, count
+		                // month, product, category, profit, count----
 		DataStream<Tuple5<String, String, String, Integer, Integer>> mapped = data.map(new Splitter());      // tuple  [June,Category5,Bat,12,1]
 		                                                                                                     //        [June,Category4,Perfume,10,1]
 						// groupBy 'month'                                                                                           
@@ -34,7 +34,7 @@ public class SessionWindowingWithProcessingTime
 				.reduce(new Reduce1());   
              																// June { [Category5,Bat,12,1] Category4,Perfume,10,1}	//rolling reduce			
 		                                                                   // reduced = { [Category4,Perfume,22,2] ..... }
-		//reduced.print();
+		//reduced.print();---*---
 		reduced.writeAsText("/home/jivesh/www");
 		// execute program
 		env.execute("Avg Profit Per Month");
