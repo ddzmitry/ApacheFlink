@@ -30,8 +30,10 @@ public class GlobalWindow
         DataStream<Tuple5<String, String, String, Integer, Integer>> reduced = mapped
                 .keyBy(0)
                 .window(GlobalWindows.create())
-//                IMPORTANT WHEN HAVING GLOBAL WINDOW -> CountTrigger.of(5)
+//                IMPORTANT WHEN HAVING GLOBAL WINDOW -> CountTrigger.of(5) -> After every 5 elements in window
+
                 .trigger(CountTrigger.of(5))
+                .evictor(CountEvictor.of(4))
                 .reduce(new Reduce1());
         // June { [Category5,Bat,12,1] Category4,Perfume,10,1}	//rolling reduce
         // reduced = { [Category4,Perfume,22,2] ..... }
