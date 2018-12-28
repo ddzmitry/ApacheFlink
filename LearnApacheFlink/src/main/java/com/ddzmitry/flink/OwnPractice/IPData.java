@@ -92,12 +92,12 @@ public class IPData {
                                 return new Tuple2<String, Integer>(value.f0, (value.f2 / value.f1));
                             }
                         });
-        avgTimeWebsite.print();
+//        avgTimeWebsite.print();
 
         DataStream<Tuple2<String, Integer>> usersPerWebsite =	 UsDataOnly
                 .keyBy(0)
                 .flatMap(new Click.DistinctUsers());
-
+        usersPerWebsite.print();
         env.execute("MappingIpData");
     }
 
